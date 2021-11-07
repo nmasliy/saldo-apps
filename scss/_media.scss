@@ -1,4 +1,23 @@
 @media (max-width: 768px) {
+    .article-page {
+        padding-bottom: 60px;
+        padding-top: 20px;
+        
+        h3 {
+            font-size: 24px;
+        }
+
+        &__link {
+            margin-top: 30px;
+        }
+        
+        &__img {
+            margin-bottom: 26px;
+            img {
+                border-radius: 10px;
+            }
+        }
+    }
     .section-heading {
         padding-top: 50px;
         padding-bottom: 86px;
@@ -164,6 +183,21 @@
         &__name {
             padding: 20px;
             font-size: 22px;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .article-page {
+        &__links {
+            a {
+                width: 100%;
+                min-width: auto;
+                margin-bottom: 14px;
+                &:last-child {
+                    margin-bottom: 0;
+                } 
+            }
         }
     }
 }
