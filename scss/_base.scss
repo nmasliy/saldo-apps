@@ -13,6 +13,11 @@
 @include font("Graphik-Medium", "Graphik-Medium", "500", "normal");
 @include font("Graphik-Regular", "Graphik-Regular", "400", "normal");
 @include font("Graphik-Semibold", "Graphik-Semibold", "600", "normal");
+@include font("Graphik-Bold", "Graphik-Bold", "700", "normal");
+
+img {
+    max-width: 100%;
+}
 
 .careers-why__item {
     
@@ -75,7 +80,6 @@ input[type=number]::-webkit-outer-spin-button {
         top: 17px;
         opacity: 1;
         padding: 8px;
-        svg {}
         path {
             fill: #ABB2BA;
         }
@@ -94,7 +98,7 @@ input[type=number]::-webkit-outer-spin-button {
             background: #FFFFFF;
             border: 1px solid rgba(0, 0, 0, 0.1);
             outline-color: #6B8BAC;
-            
+            font-family: inherit;
 
             &::placeholder {
                 color: rgba(0, 0, 0, 0.4);
