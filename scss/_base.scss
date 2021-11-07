@@ -14,7 +14,184 @@
 @include font("Graphik-Regular", "Graphik-Regular", "400", "normal");
 @include font("Graphik-Semibold", "Graphik-Semibold", "600", "normal");
 
-.dots {
+.careers-why__item {
+    
+    &.active {
+        .careers-why__btn {
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+        .dots {
+            display: none;
+        }
+        .hidden-content {
+            display: block;
+        }
+    }
 }
+
 .hidden-content {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+.primary-btn {
+    display: inline-block;
+    padding: 20px 50px;
+    min-width: 218px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.3;
+    border-radius: 10px;
+    background: #000000;
+    font-family: 'Graphik-Semibold', sans-serif;
+    border: none;
+}
+
+.modal-popup {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 88px 25px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    background: #F5F6F7;
+    border-radius: 20px;
+
+    .fancybox-button {
+        right: 10px;
+        top: 17px;
+        opacity: 1;
+        padding: 8px;
+        svg {}
+        path {
+            fill: #ABB2BA;
+        }
+    }
+    
+    &__form {
+        max-width: 560px;
+        margin: 0 auto;
+        input, textarea {
+            display: block;
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            padding: 20px;
+            background: #FFFFFF;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            outline-color: #6B8BAC;
+            
+
+            &::placeholder {
+                color: rgba(0, 0, 0, 0.4);
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        textarea {
+            min-height: 118px;
+            resize: none;
+        }
+    }
+
+    &__btn-wrapper {
+        text-align: center;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 50px;
+        color: #000;
+        font-weight: bold;
+        font-size: 36px;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 110%;
+    }
+
+    &__vacancy {
+        background: #F8F9FA;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        font-size: 16px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    &__file-input {
+        margin-bottom: 40px;
+        cursor: pointer;
+        label {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #E8F2FC;
+            border-radius: 10px;
+
+            span {
+                display: inline-block;
+                font-family: 'Graphik-Medium', sans-serif;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 140%;
+                color: #6B8BAC;
+                margin-left: 5px;
+
+            }
+        }
+        input {
+            display: none;
+        }
+    }
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+    li {
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.03);
+        transition: .3s ease-in-out;
+        &:hover {
+            background: rgba(0, 0, 0, 0.13);
+        }
+        & + li {
+            margin-left: 15px;
+        }
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        &.active {
+            background: #000;
+            color: #FFFFFF;
+            &:hover {
+                background: rgba(0, 0, 0, 0.8);
+            }
+        }
+    }
 }

@@ -58,26 +58,32 @@ img.emoji {
 <link rel="icon" href="https://saldoapps.com/wp-content/uploads/2021/10/favico.jpg" sizes="32x32" />
 <link rel="icon" href="https://saldoapps.com/wp-content/uploads/2021/10/favico.jpg" sizes="192x192" />
 <link rel="apple-touch-icon" href="https://saldoapps.com/wp-content/uploads/2021/10/favico.jpg" />
-<link rel="stylesheet" href="css/saldo-styles.css">
 <meta name="msapplication-TileImage" content="https://saldoapps.com/wp-content/uploads/2021/10/favico.jpg" />
+<!-- Saldo styles -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+<link rel="stylesheet" href="css/saldo-styles.css">
+<!-- Saldo styles -->
 </head>
 
 <body class="home page-template-default page page-id-13 wp-custom-logo">
-    <header>
-        <div class="container">
-            <a href="https://saldoapps.com" class="logo"><img src="https://saldoapps.com/wp-content/uploads/2021/10/logo.svg" alt="Home"></a>
-            <div class="hamburger-menu">
-                <input id="menu__toggle" type="checkbox" /> <label class="menu__btn" for="menu__toggle"><span></span></label>
-                <ul id="menu-main-menu" class="menu__box"><li id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-18"><a href="/#first" aria-current="page">Home</a></li>
-                <li id="menu-item-19" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-19"><a href="/#apps" aria-current="page">Our apps</a></li>
-                <li id="menu-item-20" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-20"><a href="/#about" aria-current="page">About us</a></li>
-                <li id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-21"><a href="/#press" aria-current="page">Press &#038; Media</a></li>
-                <li id="menu-item-22" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-22"><a href="/#careers" aria-current="page">Careers</a></li>
-                <li id="menu-item-23" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-23"><a href="/#blog" aria-current="page">Blog</a></li>
-                <li id="menu-item-24" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-24"><a href="/#contact" aria-current="page">Contact us</a></li>
-                </ul>		</div>
-        </div>
-    </header>
+    <div class="head-wrapper" style="background-image: url('images/heading-bg.png');">
+
+        <header>
+            <div class="container">
+                <a href="https://saldoapps.com" class="logo"><img src="https://saldoapps.com/wp-content/uploads/2021/10/logo.svg" alt="Home"></a>
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" /> <label class="menu__btn" for="menu__toggle"><span></span></label>
+                    <ul id="menu-main-menu" class="menu__box"><li id="menu-item-18" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-18"><a href="/#first" aria-current="page">Home</a></li>
+                    <li id="menu-item-19" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-19"><a href="/#apps" aria-current="page">Our apps</a></li>
+                    <li id="menu-item-20" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-20"><a href="/#about" aria-current="page">About us</a></li>
+                    <li id="menu-item-21" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-21"><a href="/#press" aria-current="page">Press &#038; Media</a></li>
+                    <li id="menu-item-22" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-22"><a href="/#careers" aria-current="page">Careers</a></li>
+                    <li id="menu-item-23" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-23"><a href="/#blog" aria-current="page">Blog</a></li>
+                    <li id="menu-item-24" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-24"><a href="/#contact" aria-current="page">Contact us</a></li>
+                    </ul>		</div>
+            </div>
+        </header>
     <style>
         .first{
             background: url(https://saldoapps.com/wp-content/uploads/2021/10/i1-scaled.webp) no-repeat;
@@ -104,11 +110,12 @@ img.emoji {
         }
     </style>
 
-    <section class="section-heading" style="background-image: url('../images/heading-bg.png');">
+    <section class="section-heading">
         <div class="container">
             <h1>Careers</h1>
         </div>
     </section>
+</div>
 
     <section class="careers-why">
         <div class="container">
@@ -146,10 +153,15 @@ img.emoji {
                         <div class="careers-why__text">
                             <p>Our apps bring real benefits to people. Before us, clients either used paper and pen, and many businesses<span class="dots">...</span><span class="hidden-content">clients either used paper and pen</span></p>
                         </div>
-                        <a href="#" class="careers-why__btn">Show more</a>
+                        <a href="#" class="careers-why__btn">
+                            <span>Show more</span>
+                            <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L7 7L13 1" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
                     </li>
                     <li class="careers-why__item">
-                        <div class="careers-why__iconcareers-why__icon--orange">
+                        <div class="careers-why__icon careers-why__icon--orange">
                             <img src="images/careers-why-icon-4.svg" alt="icon">
                         </div>
                         <div class="careers-why__name">TOP PRODUCTS</div>
@@ -161,11 +173,16 @@ img.emoji {
                         <div class="careers-why__icon careers-why__icon--yellow">
                             <img src="images/careers-why-icon-5.svg" alt="icon">
                         </div>
-                        <div class="careers-why__name">REAL BENEFITS</div>
+                        <div class="careers-why__name">Independence</div>
                         <div class="careers-why__text">
-                            <p>We are looking for people who want to make independent decisions about product development<span class="dots">...</span><span class="hidden-content">The team itself determines how the product will look and work.</span></p>
+                            <p><span>We are looking for people who want to make independent decisions about product development</span><span class="dots">...</span><span class="hidden-content">The team itself determines how the product will look and work.</span></p>
                         </div>
-                        <a href="#" class="careers-why__btn">Show more</a>
+                        <a href="#" class="careers-why__btn">
+                            <span>Show more</span>
+                            <svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L7 7L13 1" stroke="black" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
                     </li>
                     <li class="careers-why__item">
                         <div class="careers-why__icon careers-why__icon--purple">
@@ -181,8 +198,198 @@ img.emoji {
         </div>
     </section>
 
-
-
+    <section class="roles">
+        <div class="container">
+            <h2 class="roles__title">Open Roles</h2>
+            <div class="roles__head">
+                <div class="roles__select">
+                    <select name="team" id="team-select">
+                        <option value="team-0" selected disabled>Team</option>
+                        <option value="development">development</option>
+                        <option value="support">support and sales</option>
+                        <option value="marketing">marketing</option>
+                        <option value="design">design</option>
+                        <option value="product">product/project</option>
+                        <option value="people">people</option>
+                    </select>
+                </div>
+                <div class="roles__select">
+                    <select name="role" id="role-select">
+                        <option value="role-0" selected disabled>Role</option>
+                        <option value="role-1">Middle/Senior Java Developer (Fintech)</option>
+                        <option value="role-2">HR Specialist</option>
+                        <option value="role-3">Senior Product Manager (Fintech, mobile)</option>
+                    </select>
+                </div>
+                <div class="roles__select">
+                    <select name="location" id="location-select">
+                        <option value="location-0" selected disabled>Location</option>
+                        <option value="Kyiv">Kyiv</option>
+                        <option value="Odessa">Odessa</option>
+                        <option value="Remote">Remote</option>
+                    </select>
+                </div>
+            </div>
+            <div class="roles__accordions">
+                <div class="roles__accordion">
+                    <div class="roles__accordion-head">
+                        <div class="roles__accordion-col">
+                            <div class="roles__accordion-title">Middle/Senior Java Developer (Fintech)</div>
+                            <div class="roles__accordion-subtitle">Remote, Kyiv, Odesa </div>
+                        </div>
+                        <div class="roles__accordion-col">
+                            <div class="roles__accordion-btn"></div>
+                        </div>
+                    </div>
+                    <div class="roles__accordion-content">
+                        <div class="roles__accordion-box">
+                            <div class="roles__accordion-content-title">We’re looking for someone who has:</div>
+                            <ul class="roles__accordion-list">
+                                <li>Experience in products with 30-day retention> 8%.</li>
+                                <li>Experience in conducting in-depth interviews.</li>
+                                <li>Experience in building push/email/in-app notification chains.</li>
+                                <li>Understanding the principles of viral mechanics.</li>
+                                <li>Worked in Amplitude or similar analytics systems.</li>
+                                <li>Experience in running and validating A/B test results.</li>
+                            </ul>
+                        </div>
+                        <div class="roles__accordion-box">
+                            <div class="roles__accordion-content-title">What you’re gonna do?</div>
+                            <ul class="roles__accordion-list">
+                                <li>Increase the conversion of current products systematically.</li>
+                                <li>Proactively monitor the competitive environment.</li>
+                                <li>Generate and validate new product ideas.</li>
+                                <li>Manage the resources required to implement the idea.</li>
+                                <li>Assess the impact of product functionality on the overall financial performance of the company.</li>
+                            </ul>
+                        </div>
+                        <div class="roles__accordion-box">
+                            <div class="roles__accordion-content-title">We offer:</div>
+                            <ul class="roles__accordion-list">
+                                <li>Convenient schedule for larks, owls, and those who haven’t decided yet: from 8 (12) to 17 (21).</li>
+                                <li>Office in the city center (Odesa, Kyiv) or the ability to work completely remotely.</li>
+                                <li>Paid vacation and sick leave.</li>
+                                <li>Opportunity for training and development: the experience and assistance of our employees, assistance in professional adaptation, and training by the curator throughout the trial period.</li>
+                                <li>Career growth within the company, which you can influence yourself.</li>
+                                <li>No micromanagement: we evaluate the result of the work.</li>
+                                <li>Participation in conferences and seminars organized by the Netpeak Group.</li>
+                                <li>Gamification system, netpixes, and Netpeak Store (an internal store where you can choose anything from socks to iPhones).</li>
+                                <li>Corporate events and entertainment, both at the level of the entire Netpeak Group, and more locally, at the level of Saldo Apps.</li>
+                                <li>Work in a local product that is known all over the world.</li>
+                            </ul>
+                        </div>
+                        <div class="roles__btn  roles__btn-wrapper">
+                            <button class="roles__btn  primary-btn" data-fancybox data-src="#modal-apply" data-vacancy="Middle/Senior Java Developer">Apply now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="roles__accordion">
+                    <div class="roles__accordion-head">
+                        <div class="roles__accordion-col">
+                            <div class="roles__accordion-title">HR Specialist</div>
+                            <div class="roles__accordion-subtitle">Remote, Kyiv, Odesa </div>
+                        </div>
+                        <div class="roles__accordion-col">
+                            <div class="roles__accordion-btn"></div>
+                        </div>
+                    </div>
+                    <div class="roles__accordion-content">
+                        <div class="roles__accordion-box">
+                            <div class="roles__accordion-content-title">We’re looking for someone who has:</div>
+                            <ul class="roles__accordion-list">
+                                <li>Experience in products with 30-day retention> 8%.</li>
+                                <li>Experience in conducting in-depth interviews.</li>
+                                <li>Experience in building push/email/in-app notification chains.</li>
+                                <li>Understanding the principles of viral mechanics.</li>
+                                <li>Worked in Amplitude or similar analytics systems.</li>
+                                <li>Experience in running and validating A/B test results.</li>
+                            </ul>
+                        </div>
+                        <div class="roles__accordion-box">
+                            <div class="roles__accordion-content-title">What you’re gonna do?</div>
+                            <ul class="roles__accordion-list">
+                                <li>Increase the conversion of current products systematically.</li>
+                                <li>Proactively monitor the competitive environment.</li>
+                                <li>Generate and validate new product ideas.</li>
+                                <li>Manage the resources required to implement the idea.</li>
+                                <li>Assess the impact of product functionality on the overall financial performance of the company.</li>
+                            </ul>
+                        </div>
+                        <div class="roles__accordion-box">
+                            <div class="roles__accordion-content-title">We offer:</div>
+                            <ul class="roles__accordion-list">
+                                <li>Convenient schedule for larks, owls, and those who haven’t decided yet: from 8 (12) to 17 (21).</li>
+                                <li>Office in the city center (Odesa, Kyiv) or the ability to work completely remotely.</li>
+                                <li>Paid vacation and sick leave.</li>
+                                <li>Opportunity for training and development: the experience and assistance of our employees, assistance in professional adaptation, and training by the curator throughout the trial period.</li>
+                                <li>Career growth within the company, which you can influence yourself.</li>
+                                <li>No micromanagement: we evaluate the result of the work.</li>
+                                <li>Participation in conferences and seminars organized by the Netpeak Group.</li>
+                                <li>Gamification system, netpixes, and Netpeak Store (an internal store where you can choose anything from socks to iPhones).</li>
+                                <li>Corporate events and entertainment, both at the level of the entire Netpeak Group, and more locally, at the level of Saldo Apps.</li>
+                                <li>Work in a local product that is known all over the world.</li>
+                            </ul>
+                        </div>
+                        <div class="roles__btn  roles__btn-wrapper">
+                            <button class="roles__btn  primary-btn"  data-fancybox data-src="#modal-apply" data-vacancy="HR Specialist">Apply now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="roles__accordion">
+                    <div class="roles__accordion-head">
+                        <div class="roles__accordion-col">
+                            <div class="roles__accordion-title">Senior Product Manager (Fintech, mobile)</div>
+                            <div class="roles__accordion-subtitle">Remote, Kyiv, Odesa </div>
+                        </div>
+                        <div class="roles__accordion-col">
+                            <div class="roles__accordion-btn"></div>
+                        </div>
+                    </div>
+                    <div class="roles__accordion-content">
+                        <div class="roles__accordion-box">
+                            <div class="roles__accordion-content-title">We’re looking for someone who has:</div>
+                            <ul class="roles__accordion-list">
+                                <li>Experience in products with 30-day retention> 8%.</li>
+                                <li>Experience in conducting in-depth interviews.</li>
+                                <li>Experience in building push/email/in-app notification chains.</li>
+                                <li>Understanding the principles of viral mechanics.</li>
+                                <li>Worked in Amplitude or similar analytics systems.</li>
+                                <li>Experience in running and validating A/B test results.</li>
+                            </ul>
+                        </div>
+                        <div class="roles__accordion-box">
+                            <div class="roles__accordion-content-title">What you’re gonna do?</div>
+                            <ul class="roles__accordion-list">
+                                <li>Increase the conversion of current products systematically.</li>
+                                <li>Proactively monitor the competitive environment.</li>
+                                <li>Generate and validate new product ideas.</li>
+                                <li>Manage the resources required to implement the idea.</li>
+                                <li>Assess the impact of product functionality on the overall financial performance of the company.</li>
+                            </ul>
+                        </div>
+                        <div class="roles__accordion-box">
+                            <div class="roles__accordion-content-title">We offer:</div>
+                            <ul class="roles__accordion-list">
+                                <li>Convenient schedule for larks, owls, and those who haven’t decided yet: from 8 (12) to 17 (21).</li>
+                                <li>Office in the city center (Odesa, Kyiv) or the ability to work completely remotely.</li>
+                                <li>Paid vacation and sick leave.</li>
+                                <li>Opportunity for training and development: the experience and assistance of our employees, assistance in professional adaptation, and training by the curator throughout the trial period.</li>
+                                <li>Career growth within the company, which you can influence yourself.</li>
+                                <li>No micromanagement: we evaluate the result of the work.</li>
+                                <li>Participation in conferences and seminars organized by the Netpeak Group.</li>
+                                <li>Gamification system, netpixes, and Netpeak Store (an internal store where you can choose anything from socks to iPhones).</li>
+                                <li>Corporate events and entertainment, both at the level of the entire Netpeak Group, and more locally, at the level of Saldo Apps.</li>
+                                <li>Work in a local product that is known all over the world.</li>
+                            </ul>
+                        </div>
+                        <div class="roles__btn  roles__btn-wrapper">
+                            <button class="roles__btn  primary-btn"  data-fancybox data-src="#modal-apply" data-vacancy="Senior Product Manager">Apply now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 <footer>
     <div class="container">
@@ -190,12 +397,90 @@ img.emoji {
     </div>
 </footer>
 
+<div class="modal-popup" id="modal-apply" style="display:none; background-image: url('images/modal-bg.svg');" >
+    <div class="modal-popup__inner">
+        <form action="#" class="modal-popup__form">
+            <div class="modal-popup__title">Apply</div>
+            <div class="modal-popup__vacancy">Senior Product Manager</div>
+            <input type="text" placeholder="First name">
+            <input type="text" placeholder="Last name">
+            <input type="email" placeholder="Email">
+            <input type="number" placeholder="Phone">
+            <input type="text" placeholder="Location">
+            <input type="number" placeholder="Expected monthly salary">
+            <div class="modal-popup__file-input">
+                <label>
+                    <input type="file">
+                    <svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.8059 10.0315L7.97889 15.8584C6.49451 17.3507 4.50482 17.2007 3.23363 15.9216C1.94664 14.6425 1.80452 12.6607 3.29679 11.1684L11.2635 3.20177C12.132 2.33326 13.4348 2.17534 14.2796 3.02807C15.1323 3.8808 14.9744 5.16778 14.1059 6.04419L6.28923 13.8687C5.93393 14.224 5.51546 14.1214 5.27069 13.8845C5.03383 13.6319 4.93118 13.2213 5.28649 12.8581L10.7345 7.41014C11.0108 7.13379 11.0266 6.73111 10.766 6.46266C10.4976 6.21 10.0949 6.2179 9.81857 6.49424L4.33901 11.9659C3.50208 12.8186 3.53366 14.1135 4.28374 14.8636C5.09699 15.6768 6.32871 15.661 7.18143 14.8083L15.0376 6.95219C16.5614 5.42834 16.5062 3.42285 15.1718 2.0806C13.8611 0.777821 11.8241 0.683073 10.2923 2.20693L2.27826 10.2368C0.280667 12.2344 0.414893 15.1005 2.23088 16.9165C4.04687 18.7245 6.92088 18.8667 8.91847 16.877L14.7849 11.0105C15.0534 10.75 15.0455 10.2683 14.777 10.0078C14.5165 9.73144 14.0822 9.77092 13.8059 10.0315Z" fill="#6B8BAC"/>
+                    </svg>
+                    <span>RESUME/CV</span>
+                </label>
+            </div>
+            <input type="text" placeholder="LinkedIn Profile">
+            <textarea placeholder="Cover letter"></textarea>
+            <div class="modal-popup__btn-wrapper">
+                <button class="primary-btn">Apply now</button>
+            </div>
+        </form>
+    </div>
+</div>
+
 <script src='https://saldoapps.com/wp-content/themes/uni/js/navigation.js?ver=1.0.0' id='uni-navigation-js'></script>
 <script src='https://saldoapps.com/wp-includes/js/wp-embed.min.js?ver=5.8.1' id='wp-embed-js'></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<!-- Careers scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+<script>
+    const buttons = document.querySelectorAll('.careers-why__btn');
+
+    $('.roles__select select').niceSelect();
+
+    buttons.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            btn.closest('.careers-why__item').classList.toggle('active');
+
+            if ( btn.closest('.careers-why__item').classList.contains('active')) {
+                btn.querySelector('span').textContent = 'Show less';
+            } else {
+                btn.querySelector('span').textContent = 'Show more';
+            }
+        })
+    })
+
+    $('.roles__accordion-head').on('click', function(e) {
+        $(this).closest('.roles__accordion').toggleClass('active');
+        $(this).next().slideToggle(500);
+    })
+
+    $('.roles__btn').on('click', function(){
+        const vacancy = this.dataset.vacancy;
+        $('.modal-popup__vacancy').text(vacancy);
+    })
+
+    $('.modal-popup__close').on('click', function() {
+        $.fn.fancybox.close();
+    })
+
+    if (window.innerWidth < 769) {
+        $(".careers-why__list").slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            arrows: false,
+            slidesToScroll: 1,
+        });
+    }
+</script>
+<!-- Careers scripts -->
 
 <script>
 if (document.documentElement.clientWidth < 1100) {

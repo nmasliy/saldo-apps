@@ -1,44 +1,124 @@
 .careers-why {
+    padding-top: 85px;
+    padding-bottom: 45px;
+    overflow: hidden;
+    background-color: #F1F2F4;
 
-    &__inner {
+    .container {
+        max-width: 1160px;
+        padding: 0 20px;
     }
 
     &__head {
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto;
+        margin-bottom: 110px;
+        h2 {
+            margin-bottom: 30px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 150%;
+            color: rgba(0, 0, 0, 0.7);
+        }
     }
 
     &__list {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
     }
 
     &__item {
+        margin-left: 20px;
+        margin-bottom: 90px;
+        padding: 25px 35px;
+        padding-bottom: 50px;
+        min-height: 355px;
+        width: calc(33.333% - 20px);
+        text-align: center;
+        background: #FFFFFF;
+        box-shadow: 0px 29px 35px rgba(18, 31, 77, 0.07);
+        border-radius: 20px;
+        &:nth-child(3n + 1){
+            margin-left: 0;
+        }
     }
 
     &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+        background-color: #bec4cf;
+        box-shadow: 0px 14px 30px rgba(178, 181, 187, 0.34);
+        border-radius: 20px;
+        margin-bottom: 40px;
+        margin: -75px auto 40px auto;
+        
     }
 
     &__icon--blue {
+        background: #3875F2;
+        box-shadow: 0px 14px 30px rgba(56, 117, 242, 0.34);
     }
-
-    &__name {
-    }
-
-    &__text {
-    }
-
     &__icon--green {
+        background: #2CBD3B;
+        box-shadow: 0px 14px 30px rgba(44, 189, 59, 0.34);
     }
 
     &__icon--red-orange {
-    }
-
-    &__btn {
-    }
-
-    &__iconcareers-why {
+        background: #FA8559;
+        box-shadow: 0px 14px 30px rgba(250, 133, 89, 0.34);
     }
 
     &__icon--yellow {
+        background: #FFC700;
+        box-shadow: 0px 14px 30px rgba(255, 199, 0, 0.34);
+    }
+
+    &__icon--orange {
+        background: #FFA500;
+        box-shadow: 0px 14px 30px rgba(255, 165, 0, 0.34);
     }
 
     &__icon--purple {
+        background: #CA63EE;
+        box-shadow: 0px 14px 30px rgba(202, 99, 238, 0.34);
+        border-radius: 20px;
+    }
+
+    &__name {
+        margin-bottom: 12px;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 20px;
+
+    }
+
+    &__text {
+        
+        p {
+            margin: 10px 0;
+        }
+    }
+
+    &__btn {
+        display: inline-block;
+        margin-top: 30px;
+        color: #000;
+        font-family: 'Graphik-Semibold', sans-serif;
+        font-weight: 600;
+
+        svg {
+            display: inline-block;
+            margin-left: 6px;
+            transition: transform cubic-bezier(0.215, 0.610, 0.355, 1) .4s;
+        }
     }
 }
